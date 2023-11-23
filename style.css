@@ -7,7 +7,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-image: linear-gradient(to right, #4ecaf0 , #8fe5ff, #adecff);
+    background-image: linear-gradient(to right, #4ecaf0, #8fe5ff, #adecff);
 }
 
 .card {
@@ -62,6 +62,9 @@ input {
     border: 2px solid #C9E0E5;
     background: #FFF;
     margin-bottom: 8px;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
 }
 
 button {
