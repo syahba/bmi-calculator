@@ -28,8 +28,8 @@ const getInput = () => {
         results.innerHTML = `<p style="color:red">Please check your weight and height again</p>`;
     } else {
         getBMI(weight, height);
-        card[0].style.height = '528px';
     };
+    card[0].style.height = '528px';
 };
 
 // calculate bmi
