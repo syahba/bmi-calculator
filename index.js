@@ -38,8 +38,15 @@ const getBMI = (weight, height) => {
 
     const data = weight / ((height/100) ** 2);
     const bmi = Math.round(data * 10) / 10;
-    bmi < 18.5 ? category = 'Underweight' : bmi >= 18.5 && bmi <= 24.9 ? category = 'Normal' 
-    : bmi >= 25 && bmi <= 29.9 ? category = 'Overweight' : category = 'Obesity';
-
+    if (bmi < 18.5) {
+        category = 'Underweight';
+    } else if (bmi >= 18.5 && bmi <= 24.9) {
+        category = 'Normal';
+    } else if (bmi >= 25 && bmi <= 29.9) {
+        category = 'Overweight';
+    } else {
+        category = 'Obesity';
+    };
+    
     results.innerHTML = `<p>Your BMI is <b>${bmi}</b> which means you are <b>${category}</b></p>`;
 };
